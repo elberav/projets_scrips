@@ -46,7 +46,7 @@ vez que la abras. Ejecuta estos dos comandos:
 
 ``` bash
 # Agrega la carga del script a tu archivo de configuración .bashrc
-echo 'source ~/Arbax.sh' >> ~/.bashrc
+chmod +x ~/Arbax.sh
 
 cat << 'EOF' >> ~/.bashrc
 
