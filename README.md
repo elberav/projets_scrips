@@ -30,13 +30,13 @@ Puedes usar curl o wget. El archivo se guardará como `~/Arbax.sh`.
 ### Opción con cURL (Recomendado):
 
 ``` bash
-curl -o ~/Arbax.sh https://raw.githubusercontent.com/elberav/projets_scrips/main/Arbax_.723.next.line.sh
+curl -o ~/Arbax.sh https://raw.githubusercontent.com/elberav/projets_scrips/main/Arbax_.723.next.line.bash
 ```
 
 ### Opción con Wget:
 
 ``` bash
-wget -O ~/Arbax.sh https://raw.githubusercontent.com/elberav/projets_scrips/main/Arbax_.723.next.line.sh
+wget -O ~/Arbax.sh https://raw.githubusercontent.com/elberav/projets_scrips/main/Arbax_.723.next.line.bash
 ```
 
 ## 2. Activar el tema
@@ -47,6 +47,17 @@ vez que la abras. Ejecuta estos dos comandos:
 ``` bash
 # Agrega la carga del script a tu archivo de configuración .bashrc
 echo 'source ~/Arbax.sh' >> ~/.bashrc
+
+cat << 'EOF' >> ~/.bashrc
+
+function _generate_ps1_binary() {
+    local EXIT_CODE=$?
+    PS1="$(~/Arbax.sh $EXIT_CODE)"
+}
+
+PROMPT_COMMAND="_generate_ps1_binary"
+EOF
+
 
 # Recarga la configuración para ver los cambios inmediatamente
 source ~/.bashrc
