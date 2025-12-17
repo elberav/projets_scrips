@@ -30,13 +30,13 @@ Puedes usar curl o wget. El archivo se guardará como `~/Arbax.sh`.
 ### Opción con cURL (Recomendado):
 
 ``` bash
-curl -o ~/Arbax.sh https://raw.githubusercontent.com/elberav/projets_scrips/main/Arbax_.723.next.line.bash
+curl -o ~/Arbax.sh https://raw.githubusercontent.com/elberav/projets_scrips/main/Arbax1.sh
 ```
 
 ### Opción con Wget:
 
 ``` bash
-wget -O ~/Arbax.sh https://raw.githubusercontent.com/elberav/projets_scrips/main/Arbax_.723.next.line.bash
+wget -O ~/Arbax.sh https://raw.githubusercontent.com/elberav/projets_scrips/main/Arbax1.sh
 ```
 
 ## 2. Activar el tema
